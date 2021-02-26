@@ -6,6 +6,7 @@
 body{ /*zerando as config padroes dos navegadores*/
     margin: 0;
     padding: 0;
+    padding-bottom: 300px;
 }
 
 /*cabeçalho*/
@@ -149,4 +150,32 @@ nav a:hover{
 .text1 p{
     margin-top: 0px;
 }
+/*--------------------GERAL----------------------*/
+#geral{ /*dividindo em tres espaços os conteudos principais*/
+    display: flex;
+    justify-content: center;
+}
 
+#geral section{
+    flex: 2;
+}
+
+#geral aside{
+    flex: 1;
+}
+/* titulo do conteudo*/
+.widget_title{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.widget_title_text{
+    color: #000000;
+    font-size: 21px;
+    font-weight: bold;
+}
+.widget_title_bar{
+    width: 50px;
+    height: 2px;
+    background-color: #36a9e1;
+    margin-top: 10px;
+}
