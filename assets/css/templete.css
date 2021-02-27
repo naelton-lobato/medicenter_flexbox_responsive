@@ -47,6 +47,7 @@ nav a{
     text-decoration: none;
     text-transform: uppercase;
     color: #727272;
+    transition: all 0.4s;
 }
 
 nav .active a,
@@ -137,6 +138,11 @@ nav a:hover{
     color: #fff;
     font-size: 13px;
     text-decoration: none;
+    transition: all 0.4s;
+}
+.banner_options a:hover{
+    color: #39aae1;
+    background-color: #fff;
 }
 
 
@@ -317,7 +323,23 @@ footer{
     background-color: #2b4c99;
 }
 
+/**/
+.footer_title{
+    margin-bottom: 10px;
+    color: #fff;
+    font-size:22px;
+    padding: 0;
+}
 
+.footer_resume{
+    color: #fff;
+    font-size: 12px;
+    line-height: 10px;
+    margin-bottom: 0;
+}
+
+
+/**/
 .flex_column{
     flex-direction: column;
 }
@@ -333,6 +355,41 @@ footer{
 footer .widget_title_text{
     color: #fff;
 }
+
+/*endereço*/
+footer p{
+    font-size: 12px;
+}
+
+.address{
+    display: flex;
+    margin-right: 20px;
+    margin-bottom: 3px;
+    font-size: 12px;
+}
+.address address:nth-child(odd){
+    width: 150px;
+}
+.address a{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/*lista footer*/
+.conte li{
+    font-size: 12px;
+    margin-right: 20px;
+    list-style: none;
+    color: blue;
+}
+.conte li:nth-child(odd){
+    list-style-type: "\2192     ";
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+/**/
 
 
 .footer_copy{
