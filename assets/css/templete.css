@@ -260,11 +260,12 @@ article .news_comments{
 /**/
 .flex{
     display: flex;
-    flex: wrap;
+    flex-wrap: wrap;
 }
 article{
-    width: 300px;
-    margin-right: 30px;
+    flex: 1;
+    min-width: 300px;
+    margin-right: 20px;
 }
 
 article a{
@@ -403,4 +404,87 @@ footer p{
 
 span{
     color: #5c5c5c; 
+}
+
+
+.menuMobile{
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+
+.mm_line{
+    height: 2px;
+    background-color: #39aae1;
+}
+
+
+/*600px*/
+@media (max-width: 600px){
+    .banner_headline{
+        padding: 20px;
+    }
+    .banner_headline h1{
+        font-size: 55px;
+    }
+    .banner_headline h2{
+        font-size: 17px;
+    }
+
+    .banner_options{
+        height: auto;
+        flex-direction: column;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+    #geral section{
+        padding: 20px;
+    }
+    .container section{
+        margin-top: 70px;
+    }
+    
+    #geral aside{
+        padding: 20px;
+    }
+    .box{
+        padding: 20px;
+    }
+
+
+    .footer_menu{
+        flex-direction: column;
+    }
+    .footer_area{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .footer_copy{
+        padding-left: 20px;
+    }
+
+    header .container{
+        flex-direction: row;
+    }
+
+    nav ul{
+        flex-direction: column;
+        display: none;
+    }
+    header{
+        height: auto;
+    }
+    .logo{
+        padding-left: 20px;
+    }
+    .menuMobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
 }
